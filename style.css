@@ -1,0 +1,452 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.head-line {
+  width: 10%;
+  text-decoration: underline 3px;
+  text-underline-offset: 15px;
+}
+
+.header-ht {
+  min-height: 45px;
+  align-items: center;
+}
+
+ul.head {
+  list-style: none;
+}
+ul.head li {
+  margin-right: 25px;
+}
+ul.icon {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.first-header {
+  background-color: #18496b;
+  color: white;
+}
+.main-header {
+  margin-bottom: 50px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+.main-header #nav-bar {
+  margin: 0 !important;
+}
+
+.main-header a {
+  color: black;
+  font-weight: bold;
+}
+
+.main-header a:visited {
+  color: #002147;
+}
+
+/* animation while hovering pulse effect */
+
+@keyframes pulse {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.main-header a:hover {
+  text-decoration: underline;
+
+  color: orangered;
+  animation: pulse 0.5s;
+  text-underline-offset: 10px;
+  /* transition: animation 1s ease; */
+}
+
+.main-header a.home {
+  color: orangered;
+}
+
+.ani-content {
+  padding: 20px;
+  position: absolute;
+  left: 10%;
+  top: 15%;
+
+  z-index: 2;
+}
+.pos-head {
+  color: #18496b;
+
+  animation-delay: 1s;
+}
+
+.btn-read {
+  background-color: #002147;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  color: white;
+
+  animation-delay: 1s;
+}
+.ani-para {
+  font-size: 1.2rem;
+
+  animation-delay: 1.5s;
+}
+.ani-para2 {
+  font-size: 1.2rem;
+
+  animation-delay: 1.5s;
+}
+
+/* caraousel slider 1 section started */
+
+.carausel-section {
+  position: relative;
+}
+.bi-arrow-right-circle-fill,
+.bi-arrow-left-circle-fill {
+  font-size: 2.3rem;
+  color: black;
+}
+.carausel-section img {
+  /* z-index: 20; */
+  transform: scale(1.2);
+}
+.carausel-section .ani-content {
+  /* z-index: 5; */
+}
+
+/* main section started */
+main h3.main-title {
+  /* font-size: 2rem; */
+  text-align: center;
+}
+
+main h3 .title-span {
+  color: #18496b;
+}
+
+.para {
+  text-align: justify;
+}
+
+/* article image started */
+
+article.bg .bg-img {
+  position: relative;
+  /* height: 100vh; */
+  padding: 50px 0;
+
+  background-image: url("assects/images/news/bg1.jpeg");
+  z-index: 8;
+}
+article.bg .back-overlay {
+  /* height: 100vh; */
+  background-color: rgba(0, 0, 0, 0.838);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: -10;
+}
+.over-content {
+  z-index: 10;
+  color: white;
+}
+
+/* card section over image  started */
+article .mycard {
+  max-width: 400px;
+  max-height: 100%;
+  /* margin: auto; */
+}
+article .mycard img {
+  width: 100%;
+  /* max-height: 300px; */
+}
+
+article .card-title {
+  font-weight: bolder;
+}
+article .card-title:hover {
+  color: #18496b;
+}
+article .mycard p {
+  text-align: justify;
+  margin-top: 20px;
+}
+article .mycard .readmore {
+  background: #18496b;
+  color: white;
+  max-width: 10rem;
+  margin: auto;
+}
+article .mycard .readmore i {
+  margin-left: 20px;
+  background-color: #1094f263;
+  font-size: 1.2rem;
+}
+
+.owl-prev i,
+.owl-next i {
+  color: white;
+  margin: 15px 15px;
+  display: block;
+  font-size: 0.8rem;
+}
+
+/* form section */
+
+form {
+  margin-top: 5rem;
+}
+
+form #name,
+#email,
+#phone,
+select#services,
+#message {
+  border: none !important ;
+  border-bottom: 1px solid rgb(84, 83, 83) !important;
+
+  /* margin-bottom: 25px; */
+  margin-left: 10px;
+}
+
+form #message {
+  border: 1px solid rgb(33, 30, 30);
+}
+form i.bi {
+  font-size: 1.3rem;
+}
+
+form #message {
+  width: 90%;
+
+  margin: auto;
+  display: block;
+}
+
+form input,
+select {
+  width: 15rem;
+}
+
+form #submit {
+  margin-top: 25px;
+  width: 100px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #18496b;
+  color: white;
+  text-align: center;
+}
+#errphone,
+#errmail,
+#errname {
+  margin-left: 32px;
+}
+
+/* achievement section */
+
+.achievement-imgbg {
+  background: url("assects/images/news/employee.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 5;
+}
+.overlay-2 {
+  background-color: rgba(0, 0, 0, 0.82);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.achievement-content {
+  z-index: 8;
+  color: white;
+}
+.content i {
+  font-size: 2rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.achievement-content .abcd p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.abcd {
+  text-align: center;
+}
+
+/* our process section started */
+
+section .process {
+  padding: 1.8rem;
+}
+
+section .process i {
+  color: #18496b;
+  font-size: 3rem;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid #002147;
+  padding: 10px;
+  margin-bottom: 2rem;
+}
+section .process i:hover {
+  background-color: #18496b;
+  color: white;
+}
+
+/* special section started */
+
+.special {
+  background: #18496b;
+}
+
+.special ul li {
+  padding: 0;
+  margin-top: 1rem;
+  border: none;
+}
+.special ul li h5,
+.special ul li i {
+  margin: 0.8rem;
+}
+.acc-list {
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+}
+.special .show {
+  background-color: rgb(0, 0, 0);
+
+  color: rgb(246, 246, 246);
+}
+
+.bi-plus-lg {
+  font-size: 1.3rem;
+}
+
+/* our testimonial */
+
+ol.feedback-carol {
+}
+
+footer {
+  background-color: #002147;
+  margin: 2rem 0;
+  padding: 2rem;
+  color: white;
+}
+
+footer h4 {
+  margin-top: 2rem;
+}
+footer ul li {
+  list-style-type: circle;
+}
+
+footer li i {
+  margin-right: 10px;
+}
+
+#carouselIdTest ol li {
+  background-color: red;
+}
+
+/* popup image css */
+
+/* popup img */
+
+/* .popup {
+  position: relative;
+  padding: 20px;
+  background-color: red;
+} */
+
+/* .modal-img {
+  
+  border-top: 3px solid #002147;
+  border-bottom: 3px solid #002147;
+  position: absolute;
+  bottom: -500px;
+  left: 50%;
+  right: 50%;
+  z-index: 500;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+
+  
+  background-color: white;
+  padding: 50px;
+} */
+
+/* .close-modal {
+  position: absolute;
+  left: 1080px;
+  top: 30px;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  z-index: 600;
+}*/
+
+.overlay-popup {
+  background-color: #00214769;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* custom media query */
+
+@media screen and (992px < width < 1200px) {
+  .navbar a {
+    font-size: 14px !important;
+    font-weight: bold !important;
+  }
+  .navbar img {
+    width: 80%;
+  }
+}
+
+@media screen and (width < 992px) {
+  .first-header {
+    display: none;
+  }
+}
